@@ -7,6 +7,7 @@ import Virginia from '../pages/Virginia'
 
 import { Route, Routes } from 'react-router-dom'
 import States from '../components/States'
+import Signature from '../components/Signature'
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
         <Route exact path='/NewJersey' element={<NewJersey />}></Route>
         <Route exact path='/NorthCarolina' element={<NorthCarolina />}></Route>
       </Routes >
+
+      <Signature></Signature>
 
 
     </div >

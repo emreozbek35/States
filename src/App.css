@@ -190,6 +190,16 @@ img {
 }
 
 
+footer {
+  font-size: 45px;
+  background-color: #efe7e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tangerine', cursive;
+  padding: 1rem;
+  text-align: center;
+}
 
 
 @media (max-width:800px) {
