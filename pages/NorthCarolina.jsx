@@ -1,12 +1,13 @@
 import React from 'react'
 import Entry from '../components/Entry'
 import Hero from '../components/Hero'
+import Image3 from '../src/images/nc.jpeg'
 
 
 const NorthCarolina = () => {
     const obj = {
         state: "North Carolina'da",
-        image: "../src/images/nc.jpeg",
+        image: Image3,
         pros: [
 
             "-Düşük yaşam maliyeti ve ekonomik fırsatlar",

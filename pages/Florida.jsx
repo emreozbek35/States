@@ -2,11 +2,12 @@ import React from 'react'
 import { useState } from 'react'
 import Entry from '../components/Entry'
 import Hero from '../components/Hero'
+import Image1 from '../src/images/original_shutterstock_715260826.avif'
 
 const Florida = (props) => {
     const obj = {
         state: "Florida'da",
-        image: "../src/images/original_shutterstock_715260826.avif",
+        image: Image1,
         pros: ["-Yıl boyunca güzel hava (+200 gün güneşli)",
             "-State income tax yok",
             "-Eğitimi iyi",
