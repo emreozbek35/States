@@ -1,0 +1,215 @@
+:root {
+  --fs1: 'League Spartan', sans-serif;
+  --fs2: 'Merriweather', serif;
+
+  --color1: #efe7e6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 2;
+  letter-spacing: .5px;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--fs2);
+  font-size: 20px;
+  overflow-x: hidden;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+span {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: rgba(149, 157, 165, 1) 0px 8px 24px;
+}
+
+.states {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--fs1);
+  font-size: 18px;
+  gap: 12px;
+
+}
+
+.states .navItem {
+  text-decoration: none;
+  color: #000;
+  margin: 0 auto;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #f5f4fd;
+  padding: 4px 20px;
+  border: 1px solid #d8d5f2;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.states .navItem:hover {
+  color: #fff;
+  background-color: #5372f0;
+  border-color: transparent;
+}
+
+.navItem.active {
+  color: #fff;
+  background-color: #5372f0;
+  border-color: transparent;
+}
+
+
+
+#entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  line-height: 1.4;
+  background-color: var(--color1);
+  padding: 70px;
+  text-align: center;
+}
+
+#entry h1 {
+  font-size: 52px;
+  font-family: var(--fs1);
+}
+
+.hero {
+  margin-top: 40px;
+}
+
+img {
+  margin: 0 auto;
+  max-height: 500px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.orange {
+  color: #c6796a;
+}
+
+.info ul {
+  text-align: center;
+  width: 100%;
+}
+
+.info-container {
+  margin-top: 10px;
+  padding: 1rem 6rem 4rem 6rem;
+}
+
+.info-container h1 {
+  text-align: center;
+  color: #c6796a;
+}
+
+.info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
+
+.info li+li {
+  margin-top: 15px;
+}
+
+
+
+
+@media (max-width:800px) {
+  .info-container {
+    padding: 1rem 2rem;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  ul+ul {
+    margin-top: 40px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #entry h1 {
+    font-size: 45px;
+  }
+}
